@@ -1,0 +1,42 @@
+<tailer>
+
+	<config>
+		<awssecretkey>==+==</awssecretkey>
+		<awsaccesskey>==+==</awsaccesskey>
+		<awskinesisEndpoint>kinesis.us-east-1.amazonaws.com</awskinesisEndpoint>
+		<awskinesisCname>kinesis</awskinesisCname> 
+		<awskinesisLocation>us-east-1</awskinesisLocation>
+	</config>
+	
+	<environment>
+		<name>env1</name>
+		<performanceStreamName>Log_input_1</performanceStreamName>
+		<rawStreamName>Log_input_raw_1</rawStreamName>
+		<files>
+			<file>/home/ricardo/workspace/api-hypermindr/api/log/raas.log</file>
+			<file>/home/ricardo/workspace/api-hypermindr/api/log/development.log
+			</file>
+			<file>/tmp/notexist/development.log</file>
+		</files>
+		<rawEnabled>true</rawEnabled>
+		<tailerBufferSize>400</tailerBufferSize>
+		<debug>true</debug>
+	</environment>
+
+	<environment>
+		<name>env2</name>
+		<performanceStreamName>Log_input_2</performanceStreamName>
+		<rawStreamName>Log_input_2_raw</rawStreamName>
+		<files>
+			<file>/home/ricardo/workspace/api-hypermindr/api/log/raas.log</file>
+			<file>/home/ricardo/workspace/api-hypermindr/api/log/development.log
+			</file>
+			<file>/tmp/notexist/development.log</file>
+		</files>
+		<rawEnabled>true</rawEnabled>
+		<tailerBufferSize>400</tailerBufferSize>
+		<debug>true</debug>
+	</environment>
+
+
+</tailer>
